@@ -11,6 +11,8 @@ const networkInterface = createNetworkInterface({
   uri: 'http://localhost:3006/graphql',
 });
 
+
+//Middlewareinjected int weather to facilitate token checks and validation.
 networkInterface.use([{
   applyMiddleware(req, next) {
     if (!req.options.headers) {
