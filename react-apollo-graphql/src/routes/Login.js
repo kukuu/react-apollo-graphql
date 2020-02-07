@@ -5,7 +5,7 @@ import { gql, graphql } from 'react-apollo';
 class Login extends React.Component {
   state = {
     email: '',
-    password: '',
+    password: ''
   }
 
   onChange = (e) => {
